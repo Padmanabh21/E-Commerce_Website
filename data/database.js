@@ -2,7 +2,9 @@ const mongodb = require('mongodb');
 
 const MongoClient = mongodb.MongoClient;
 
-let mongodbUrl = 'mongodb+srv://padii:paddi@cluster0.xbmcfkl.mongodb.net/';
+//let mongodbUrl = 'mongodb+srv://padii:paddi@cluster0.xbmcfkl.mongodb.net/';
+
+let mongodbUrl = 'mongodb+srv://default:default@cluster0.u07aqpv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 if(process.env.MONGODB_URL){
     mongodbUrl = process.env.MONGODB_URL;
